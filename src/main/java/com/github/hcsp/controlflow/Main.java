@@ -12,12 +12,13 @@ public class Main {
     public static boolean isLeapYear(int year) {
         boolean b = false;
         if (year % 100 == 0) {
-            if (year % 400 == 0) {
-                b = true;
-                return b;
-            } else {
-                return b;
-            }
+            return year % 400 == 0;
+//            if (year % 400 == 0) {
+//                b = true;
+//                return b;
+//            } else {
+//                return b;
+//            }
         } else if (year % 4 == 0) {
             b = true;
             return b;
